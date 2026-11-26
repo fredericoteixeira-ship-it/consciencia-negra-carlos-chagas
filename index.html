@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Pedagógico 'Consciência Negra, Mulheres Negras e Cultura de Paz: educação antirracista, prevenção das violências e valorização da vida' — E.E. Carlos Chagas, Lassance/MG.">
+  <meta name="keywords" content="Consciência Negra, Mulheres Negras, Cultura de Paz, E.E. Carlos Chagas, Lassance, Educação Antirracista, Ensino Médio em Tempo Integral">
+  <meta name="author" content="Estudantes do Ensino Médio em Tempo Integral da E.E. Carlos Chagas sob orientação do Prof. Frederico Filipe">
+  
+  <title>Consciência Negra, Mulheres Negras e Cultura de Paz — E.E. Carlos Chagas</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts: Cormorant Garamond (títulos em serifa de alto impacto) + Jost (sans geométrica para corpo, menu e legendas) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Chart.js 4.4.1 via cdnjs (conforme especificado) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+  <!-- Link acessível para pular direto ao conteúdo -->
+  <a href="#conteudo-principal" class="skip-to-content">Pular para o conteúdo principal</a>
+
+  <!-- Barra Superior / Header estilo Vision (Mockup de referência) -->
+  <header class="top-nav-bar" id="barra-superior">
+    <div class="nav-container">
+      
+      <!-- Lado Esquerdo: Logo em serifa com inicial destacada + Frase curta em duas linhas -->
+      <div class="brand-group">
+        <a href="#inicio" class="site-brand" aria-label="Página inicial do projeto">
+          <span class="brand-initial">C</span>
+          <span class="brand-name">CONSCIÊNCIA<span class="brand-highlight">NEGRA</span></span>
+        </a>
+        <div class="brand-motto" aria-hidden="true">
+          <span>Respeito também</span>
+          <span>é educação.</span>
+        </div>
+      </div>
+
+      <!-- Menu Desktop em MAIÚSCULAS pequenas com espaçamento entre letras -->
+      <nav class="main-menu" id="menu-principal" aria-label="Navegação do site">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-item active">INÍCIO</a></li>
+          <li><a href="#projeto" class="nav-item">O PROJETO</a></li>
+          <li><a href="#disciplinas" class="nav-item">DISCIPLINAS</a></li>
+          <li><a href="#acoes-culminancia" class="nav-item">CULMINÂNCIA</a></li>
+          <li><a href="#cronograma" class="nav-item">CRONOGRAMA</a></li>
+          <li><a href="#dados" class="nav-item">DADOS</a></li>
+          <li><a href="#contato" class="nav-item">CONTATO</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão Hamburger para Mobile -->
+      <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal">
+
+    <!-- 1. Hero em Tela Cheia (Slider de 3 Slides — Réplica fiel do vídeo de referência) -->
+    <section class="hero-slider-section" id="inicio" aria-label="Destaques do Projeto">
+      <div class="slider-track" id="slider-track">
+        
+        <!-- Slide 1: CONSCIÊNCIA NEGRA -->
+        <article class="hero-slide active" data-slide-index="0">
+          <div class="slide-bg-media" style="background-image: url('assets/rostos-1.jpg');"></div>
+          <div class="slide-gradient-overlay"></div>
+          <div class="container slide-content-layout">
+            <div class="slide-text-wrapper">
+              <span class="eyebrow-tag">PROJETO PEDAGÓGICO</span>
+              <h1 class="giant-serif-title">
+                <span class="title-row">CONSCIÊNCIA</span>
+                <span class="title-row title-row-category">
+                  <span class="title-word">NEGRA</span>
+                  <span class="category-meta">
+                    <em class="category-name">Identidade</em>
+                    <span class="category-caption">20 de novembro</span>
+                  </span>
+                </span>
+              </h1>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2: MULHERES NEGRAS -->
+        <article class="hero-slide" data-slide-index="1">
+          <div class="slide-bg-media" style="background-image: url('assets/rostos-2.jpg');"></div>
+          <div class="slide-gradient-overlay"></div>
+          <div class="container slide-content-layout">
+            <div class="slide-text-wrapper">
+              <span class="eyebrow-tag">PROJETO PEDAGÓGICO</span>
+              <h2 class="giant-serif-title">
+                <span class="title-row">MULHERES</span>
+                <span class="title-row title-row-category">
+                  <span class="title-word">NEGRAS</span>
+                  <span class="category-meta">
+                    <em class="category-name">Protagonismo</em>
+                    <span class="category-caption">história e voz</span>
+                  </span>
+                </span>
+              </h2>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3: CULTURA DE PAZ -->
+        <article class="hero-slide" data-slide-index="2">
+          <div class="slide-bg-media slide-bg-composite" style="background-image: url('assets/rostos-1.jpg');"></div>
+          <div class="slide-gradient-overlay overlay-terracotta"></div>
+          <div class="container slide-content-layout">
+            <div class="slide-text-wrapper">
+              <span class="eyebrow-tag">PROJETO PEDAGÓGICO</span>
+              <h2 class="giant-serif-title">
+                <span class="title-row">CULTURA</span>
+                <span class="title-row title-row-category">
+                  <span class="title-word">DE PAZ</span>
+                  <span class="category-meta">
+                    <em class="category-name">Respeito</em>
+                    <span class="category-caption">uma escola sem violência</span>
+                  </span>
+                </span>
+              </h2>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Rodapé do Hero: Faixa inferior levemente mais escura e translúcida -->
+      <div class="hero-bottom-bar">
+        <div class="container hero-bottom-container">
+          
+          <!-- Bloco de Texto à Esquerda (maiúsculas pequenas) -->
+          <div class="hero-info-block">
+            <strong class="info-line-bold">E.E. CARLOS CHAGAS · LASSANCE/MG</strong>
+            <span class="info-line-sub">16 a 19 de novembro de 2026 · Ensino Médio em Tempo Integral</span>
+            <span class="info-line-meta">Superintendência Regional de Ensino de Curvelo</span>
+          </div>
+
+          <!-- Indicadores e Botão de Pausa -->
+          <div class="slider-navigation-group">
+            <div class="slider-counter">
+              <span id="current-slide-num" class="slide-num-active">01</span>
+              <span class="slide-num-sep">/</span>
+              <span class="slide-num-total">03</span>
+            </div>
+            <div class="slider-dots" role="tablist" aria-label="Controle de slides">
+              <button class="dot-btn active" data-target="0" role="tab" aria-selected="true" aria-label="Slide 1: Consciência Negra"></button>
+              <button class="dot-btn" data-target="1" role="tab" aria-selected="false" aria-label="Slide 2: Mulheres Negras"></button>
+              <button class="dot-btn" data-target="2" role="tab" aria-selected="false" aria-label="Slide 3: Cultura de Paz"></button>
+            </div>
+            <button type="button" id="slider-pause" class="slider-playback-btn" aria-label="Pausar alternância de slides">
+              <span class="playback-icon" aria-hidden="true">⏸</span>
+            </button>
+          </div>
+
+          <!-- Botão Circular Laranja com Seta para Baixo -->
+          <a href="#projeto" class="circle-scroll-btn" aria-label="Rolar para a seção O Projeto">
+            <svg class="scroll-arrow-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. O Projeto: Justificativa, Objetivo Geral, Público-Alvo, Abrangência e Frases -->
+    <section class="page-section section-project" id="projeto">
+      <div class="container">
+        
+        <div class="section-label-group">
+          <span class="section-eyebrow">DIRETRIZES PEDAGÓGICAS</span>
+          <h2 class="section-heading">O PROJETO</h2>
+        </div>
+
+        <!-- Citação Central em destaque -->
+        <blockquote class="lead-quote-block">
+          <p class="lead-quote-text">“Juntos por uma escola mais justa, inclusiva e sem violência.”</p>
+          <cite class="lead-quote-author">Compromisso coletivo da comunidade escolar da E.E. Carlos Chagas</cite>
+        </blockquote>
+
+        <div class="project-details-grid">
+          
+          <!-- Justificativa -->
+          <article class="project-card">
+            <span class="card-num">01</span>
+            <h3 class="card-title">Justificativa</h3>
+            <p class="card-text">
+              A superação do racismo estrutural e da violência de gênero exige ações pedagógicas intencionais, contínuas e interdisciplinares. Este projeto nasce da necessidade de construir espaços de valorização da vida, reconhecimento da história afro-brasileira e fortalecimento da cultura de paz no ambiente escolar e comunitário.
+            </p>
+          </article>
+
+          <!-- Objetivo Geral -->
+          <article class="project-card">
+            <span class="card-num">02</span>
+            <h3 class="card-title">Objetivo Geral</h3>
+            <p class="card-text">
+              Promover a educação antirracista, o respeito à dignidade humana e o enfrentamento de todas as formas de violência contra meninas e mulheres, integrando saberes curriculares à formação cidadã e ao protagonismo dos estudantes do Ensino Médio em Tempo Integral.
+            </p>
+          </article>
+
+          <!-- Público-Alvo e Abrangência -->
+          <article class="project-card">
+            <span class="card-num">03</span>
+            <h3 class="card-title">Público-Alvo & Abrangência</h3>
+            <p class="card-text">
+              Comunidade escolar da <strong>Escola Estadual "Carlos Chagas"</strong> em Lassance/MG, com foco na turma do <strong>Ensino Médio em Tempo Integral (EMTI)</strong>, integrando docentes, famílias e articulando-se à Secretaria Municipal de Educação, Cultura, Esporte e Lazer de Lassance e à Rede de Garantia de Direitos.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Frases de Apoio do CN_frases.txt -->
+        <div class="quotes-sub-section">
+          <div class="quotes-dual-grid">
+            <div class="quote-pill-card">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <p class="quote-statement">Que a cor nunca seja o limite dos sonhos.</p>
+              <span class="quote-meta">Vozes Estudantis · E.E. Carlos Chagas</span>
+            </div>
+
+            <div class="quote-pill-card quote-pill-terracotta">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <p class="quote-statement">Há quem tenha medo da nossa cor porque nunca aprendeu a enxergar além dela.</p>
+              <span class="quote-meta">Reflexão Coletiva · EMTI Lassance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Disciplinas (Grade de Cartões com as 12 Atividades Interdisciplinares) -->
+    <section class="page-section section-disciplines" id="disciplinas">
+      <div class="container">
+        
+        <div class="section-label-group">
+          <span class="section-eyebrow">INTERDISCIPLINARIDADE NA PRÁTICA</span>
+          <h2 class="section-heading">DISCIPLINAS & ATIVIDADES</h2>
+          <p class="section-subtext">
+            O currículo em movimento: 12 abordagens integradas com produções autorais dos estudantes. Clique em cada cartão para consultar os tópicos e produtos.
+          </p>
+        </div>
+
+        <div class="disciplines-grid">
+          
+          <!-- 1. Língua Portuguesa -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">LÍNGUA PORTUGUESA</span>
+              <h3 class="discipline-title">Vozes que precisam ser ouvidas</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Leitura e interpretação de poemas, crônicas e textos de autoras negras brasileiras (Conceição Evaristo e Carolina Maria de Jesus);</li>
+              <li>Identificação crítica de expressões racistas, machistas e discriminatórias;</li>
+              <li>Produção autoral de cartas abertas, poemas, manifestos e textos de opinião.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Mural literário <em>Vozes negras, vidas que importam</em></strong>
+            </div>
+          </article>
+
+          <!-- 2. História -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">HISTÓRIA</span>
+              <h3 class="discipline-title">Mulheres negras que fizeram história</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Pesquisa biográfica sobre Dandara dos Palmares, Tereza de Benguela, Maria Firmina dos Reis e Carolina Maria de Jesus;</li>
+              <li>Estudo comparativo das formas de resistência quilombola e urbana;</li>
+              <li>Linha do tempo de resistência, movimentos sociais e conquistas de direitos civis.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Exposição histórica com biografias, imagens, datas e contribuições sociais</strong>
+            </div>
+          </article>
+
+          <!-- 3. Geografia -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">GEOGRAFIA</span>
+              <h3 class="discipline-title">Desigualdades, território e direitos</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Análise espacial de renda, moradia, saneamento, educação e acesso a serviços públicos;</li>
+              <li>Pesquisa e mapeamento territorial com fontes estatísticas oficiais;</li>
+              <li>Importância dos serviços de proteção social e acolhimento nos municípios mineiros.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Mapa de serviços e instituições de proteção e painel sobre cidadania</strong>
+            </div>
+          </article>
+
+          <!-- 4. Matemática -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">MATEMÁTICA</span>
+              <h3 class="discipline-title">Os números também contam histórias</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Leitura crítica e interpretação de dados oficiais (Atlas da Violência, FBSP e DataSenado);</li>
+              <li>Construção de gráficos de barras, linhas, tabelas e infográficos comparativos;</li>
+              <li>Cálculo de porcentagens observando com rigor o período, a população e a fonte.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Painel estatístico <em>A desigualdade em números</em></strong>
+            </div>
+          </article>
+
+          <!-- 5. Ciências -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">CIÊNCIAS</span>
+              <h3 class="discipline-title">Cuidar do corpo, respeitar a vida</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Debate sobre saúde integral, autoestima, relações interpessoais saudáveis e autocuidado;</li>
+              <li>Identificação precoce de comportamentos de controle, humilhação, intimidação e agressão;</li>
+              <li>Rotas para buscar ajuda e orientações de acolhimento sem culpabilizar a vítima.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Cartilha de autocuidado, respeito e proteção integral</strong>
+            </div>
+          </article>
+
+          <!-- 6. Arte -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">ARTE</span>
+              <h3 class="discipline-title">A arte que denuncia, celebra e transforma</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Reconhecimento das manifestações artísticas afro-brasileiras e artistas visuais negras;</li>
+              <li>Criação de cartazes, pinturas, colagens temáticas, ilustrações e painéis murais;</li>
+              <li>Montagem coletiva de instalação artística para a culminância escolar.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Exposição <em>Beleza, resistência e liberdade</em></strong>
+            </div>
+          </article>
+
+          <!-- 7. Educação Física -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">EDUCAÇÃO FÍSICA</span>
+              <h3 class="discipline-title">Respeito também se pratica</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Vivência de jogos cooperativos e práticas corporais inclusivas;</li>
+              <li>Dinâmicas de liderança compartilhada e resolução pacífica de conflitos em equipe;</li>
+              <li>Roda de discussão sobre superação de preconceitos e discriminação no esporte.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Circuito cooperativo <em>Ninguém fica de fora</em></strong>
+            </div>
+          </article>
+
+          <!-- 8. Língua Inglesa -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">LÍNGUA INGLESA</span>
+              <h3 class="discipline-title">Respect, equality and diversity</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Análise de campanhas internacionais de conscientização e direitos humanos em inglês;</li>
+              <li>Vocabulário-chave (respect, equality, rights, diversity, violence prevention);</li>
+              <li>Criação de cartazes, slogans e frases bilíngues de impacto.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Mural bilíngue <em>Black women, respect and rights</em></strong>
+            </div>
+          </article>
+
+          <!-- 9. Ensino Religioso -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">ENSINO RELIGIOSO</span>
+              <h3 class="discipline-title">Respeitar as diferenças é proteger a vida</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Reflexão sobre dignidade humana, empatia, tolerância e convivência harmoniosa;</li>
+              <li>Superação da intolerância religiosa e do preconceito contra matrizes africanas;</li>
+              <li>Construção de compromissos coletivos sem privilégio ou imposição de qualquer crença.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Pacto de convivência e respeito à diversidade cultural e de crenças</strong>
+            </div>
+          </article>
+
+          <!-- 10. Filosofia -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">FILOSOFIA</span>
+              <h3 class="discipline-title">Justiça, liberdade e dignidade humana</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Debate ético: “Uma sociedade pode ser justa quando parte de seus integrantes sofre discriminação?”;</li>
+              <li>Análise de dilemas morais e situações fictícias de violação de direitos;</li>
+              <li>Conceitos de equidade, justiça distributiva e responsabilidade social.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Painel dialógico de reflexões filosóficas e ética pública</strong>
+            </div>
+          </article>
+
+          <!-- 11. Sociologia -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">SOCIOLOGIA</span>
+              <h3 class="discipline-title">Racismo, machismo e desigualdades sociais</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Estudo dos conceitos de racismo institucional, estrutural e violência de gênero;</li>
+              <li>A perspectiva da interseccionalidade na realidade das mulheres negras no Brasil;</li>
+              <li>Desconstrução de estereótipos sobre mulheres negras veiculados pela mídia.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Seminário estudantil sobre desigualdades, direitos e transformação social</strong>
+            </div>
+          </article>
+
+          <!-- 12. Tecnologia e Informática -->
+          <article class="discipline-card" tabindex="0">
+            <div class="discipline-header">
+              <span class="discipline-tag">TECNOLOGIA E INFORMÁTICA</span>
+              <h3 class="discipline-title">Internet sem racismo e sem violência</h3>
+            </div>
+            <ul class="discipline-topics">
+              <li>Análise de exemplos fictícios de cyberbullying, racismo digital e misoginia em redes;</li>
+              <li>Boas práticas de segurança digital, privacidade e canais oficiais de denúncia online;</li>
+              <li>Produção de podcasts, cards digitais informativos e conteúdos de conscientização.</li>
+            </ul>
+            <div class="discipline-product">
+              <span class="product-badge">PRODUTO</span>
+              <strong class="product-name">Campanha digital <em>Na internet também se respeita</em></strong>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Ações Integradoras e Culminância -->
+    <section class="page-section section-actions" id="acoes-culminancia">
+      <div class="container">
+        
+        <div class="section-label-group">
+          <span class="section-eyebrow">MOBILIZAÇÃO COMUNITÁRIA</span>
+          <h2 class="section-heading">AÇÕES INTEGRADORAS & CULMINÂNCIA</h2>
+          <p class="section-subtext">
+            Três práticas permanentes de convivência e a grande Feira Pedagógica aberta à cidade de Lassance.
+          </p>
+        </div>
+
+        <!-- 3 Ações Comuns -->
+        <div class="actions-common-grid">
+          
+          <div class="action-card">
+            <div class="action-icon" aria-hidden="true">🌳</div>
+            <h3 class="action-title">1. Árvore do Respeito</h3>
+            <p class="action-desc">
+              Instalação participativa onde cada estudante escreve, de forma voluntária (anônima ou identificada), uma atitude concreta por uma escola livre de racismo e violência.
+            </p>
+          </div>
+
+          <div class="action-card">
+            <div class="action-icon" aria-hidden="true">🕊️</div>
+            <h3 class="action-title">2. Círculos de Diálogo e Paz</h3>
+            <p class="action-desc">
+              Espaços de escuta qualificada e conversas mediadas pelos professores, garantindo acolhimento respeitoso e relatos sempre voluntários.
+            </p>
+          </div>
+
+          <div class="action-card">
+            <div class="action-icon" aria-hidden="true">🛡️</div>
+            <h3 class="action-title">3. Campanha Escolar de Proteção</h3>
+            <p class="action-desc">
+              Distribuição e afixação de materiais informativos com foco em respeito, prevenção de abusos, canais de ajuda (180 e 190) e serviços da Rede Municipal.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Bloco Culminância: Feira da Consciência Negra, Mulheres e Direitos -->
+        <div class="culmination-featured-block">
+          <div class="culmination-badge">CULMINÂNCIA OFICIAL · 28 DE NOVEMBRO (SÁBADO)</div>
+          <h3 class="culmination-title">Feira da Consciência Negra, Mulheres e Direitos</h3>
+          <p class="culmination-intro">
+            Feira pedagógica aberta a toda a comunidade escolar, famílias e autoridades municipais, estruturada em 4 estações temáticas interativas:
+          </p>
+
+          <div class="stations-grid">
+            <div class="station-box">
+              <span class="station-tag">ESTAÇÃO 01</span>
+              <h4 class="station-name">História e Ancestralidade</h4>
+              <p class="station-text">Exposição de biografias, memórias quilombolas e a relevância de Zumbi e Dandara dos Palmares.</p>
+            </div>
+
+            <div class="station-box">
+              <span class="station-tag">ESTAÇÃO 02</span>
+              <h4 class="station-name">Mulheres, Direitos e Proteção</h4>
+              <p class="station-text">Orientações da Lei Maria da Penha, combate ao feminicídio e acolhimento nos serviços públicos.</p>
+            </div>
+
+            <div class="station-box">
+              <span class="station-tag">ESTAÇÃO 03</span>
+              <h4 class="station-name">Dados, Cidadania e Desigualdades</h4>
+              <p class="station-text">Apresentação dos infográficos, painéis estatísticos e leituras socioeconômicas produzidas pelos alunos.</p>
+            </div>
+
+            <div class="station-box">
+              <span class="station-tag">ESTAÇÃO 04</span>
+              <h4 class="station-name">Arte, Voz e Transformação</h4>
+              <p class="station-text">Mural literário, declamação de poesias autorais, apresentações culturais e pacto de convivência.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Cronograma (Linha do Tempo) -->
+    <section class="page-section section-timeline" id="cronograma">
+      <div class="container">
+        
+        <div class="section-label-group">
+          <span class="section-eyebrow">PLANEJAMENTO TEMPORAL</span>
+          <h2 class="section-heading">CRONOGRAMA DO PROJETO</h2>
+          <p class="section-subtext">
+            Percurso pedagógico de 16 a 28 de novembro de 2026.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          
+          <!-- Dia 16/11 -->
+          <div class="timeline-entry">
+            <div class="timeline-date-marker">
+              <span class="timeline-day">16/11</span>
+              <span class="timeline-weekday">Segunda-feira</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Abertura: Consciência Negra, identidade e respeito</h3>
+              <p class="timeline-text">
+                Apresentação oficial do projeto pedagógico para toda a escola, exibição de vídeo educativo, roda de conversa inicial e início das pesquisas temáticas pelas turmas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dia 17/11 -->
+          <div class="timeline-entry">
+            <div class="timeline-date-marker">
+              <span class="timeline-day">17/11</span>
+              <span class="timeline-weekday">Terça-feira</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Conhecer para transformar: história e desigualdades</h3>
+              <p class="timeline-text">
+                Realização de oficinas temáticas por disciplina, aprofundamento dos estudos sobre trajetórias de mulheres negras, leitura de dados oficiais e debates orientados.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dia 18/11 -->
+          <div class="timeline-entry">
+            <div class="timeline-date-marker">
+              <span class="timeline-day">18/11</span>
+              <span class="timeline-weekday">Quarta-feira</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="timeline-title">Prevenção das violências e proteção integral</h3>
+              <p class="timeline-text">
+                Oficinas sobre relações saudáveis e respeitosas, esclarecimentos sobre direitos fundamentais e serviços da Rede de Proteção, finalização e montagem das produções.
+              </p>
+            </div>
+          </div>
+
+          <!-- Destaque Feriado 20/11 -->
+          <div class="timeline-holiday-notice">
+            <span class="holiday-icon" aria-hidden="true">★</span>
+            <div class="holiday-info">
+              <strong>20 de novembro — Feriado Nacional:</strong>
+              <span>Dia Nacional de Zumbi e da Consciência Negra. Celebração da memória, ancestralidade e luta do povo negro no Brasil.</span>
+            </div>
+          </div>
+
+          <!-- Culminância 28/11 -->
+          <div class="timeline-entry timeline-entry-culmination">
+            <div class="timeline-date-marker">
+              <span class="timeline-day">28/11</span>
+              <span class="timeline-weekday">Sábado</span>
+            </div>
+            <div class="timeline-card highlight-card">
+              <span class="card-pill-tag">GRANDE CULMINÂNCIA</span>
+              <h3 class="timeline-title">Educação antirracista e compromisso com a vida</h3>
+              <p class="timeline-text">
+                Feira da Consciência Negra aberta às famílias e comunidade de Lassance: abertura cultural, visitação às 4 estações, exposições de murais e cartazes, apresentações artísticas e avaliação coletiva do projeto.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Dados e Estatísticas: Mulheres Negras, Violência e Desigualdade -->
+    <section class="page-section section-stats" id="dados">
+      <div class="container">
+        
+        <!-- Aviso Obrigatório de Conteúdo Sensível -->
+        <div class="sensitive-warning-box" role="alert">
+          <div class="warning-symbol" aria-hidden="true">⚠️</div>
+          <div class="warning-text-group">
+            <strong class="warning-headline">Aviso Importante:</strong>
+            <p class="warning-body">Esta seção trata de violência contra a mulher, feminicídio e desigualdade racial com dados oficiais e públicos.</p>
+          </div>
+        </div>
+
+        <div class="section-label-group">
+          <span class="section-eyebrow">EVIDÊNCIAS ESTATÍSTICAS OFICIAIS</span>
+          <h2 class="section-heading">MULHERES NEGRAS, VIOLÊNCIA E DESIGUALDADE</h2>
+          <p class="section-subtext">
+            Dados rigorosos extraídos do Atlas da Violência 2026 (Ipea/FBSP), Anuário Brasileiro de Segurança Pública 2025 e DataSenado (2024).
+          </p>
+        </div>
+
+        <!-- 4 Cartões de Números Grandes com Contagem Animada -->
+        <div class="stat-counter-deck">
+          
+          <div class="stat-box" data-target="2457" data-format="integer">
+            <div class="stat-number-wrap">
+              <span class="stat-val" id="num-homicidios">0</span>
+            </div>
+            <h3 class="stat-title">Mulheres negras vítimas de homicídio</h3>
+            <p class="stat-sub">Registradas no Brasil em 2024</p>
+            <div class="stat-stripe stripe-wine"></div>
+          </div>
+
+          <div class="stat-box" data-target="67.5" data-format="percent">
+            <div class="stat-number-wrap">
+              <span class="stat-val" id="num-pct-homicidios">0</span><span class="stat-percent-sign">%</span>
+            </div>
+            <h3 class="stat-title">Das vítimas femininas de homicídio</h3>
+            <p class="stat-sub">Eram mulheres negras (pretas e pardas) em 2024</p>
+            <div class="stat-stripe stripe-orange"></div>
+          </div>
+
+          <div class="stat-box" data-target="1492" data-format="integer">
+            <div class="stat-number-wrap">
+              <span class="stat-val" id="num-feminicidios">0</span>
+            </div>
+            <h3 class="stat-title">Vítimas de feminicídio no país</h3>
+            <p class="stat-sub">Assassinadas pela condição de gênero em 2024</p>
+            <div class="stat-stripe stripe-red"></div>
+          </div>
+
+          <div class="stat-box" data-target="87545" data-format="integer">
+            <div class="stat-number-wrap">
+              <span class="stat-val" id="num-estupros">0</span>
+            </div>
+            <h3 class="stat-title">Estupro e estupro de vulnerável</h3>
+            <p class="stat-sub">Registros policiais contabilizados em 2024</p>
+            <div class="stat-stripe stripe-gold"></div>
+          </div>
+
+        </div>
+
+        <!-- 6 Gráficos Chart.js -->
+        <div class="charts-layout-grid">
+          
+          <!-- Gráfico 1: Linha — Série Histórica Nacional 2014-2024 -->
+          <div class="chart-panel chart-panel-full">
+            <div class="chart-panel-header">
+              <span class="chart-index-tag">GRÁFICO 01 · SÉRIE HISTÓRICA NACIONAL</span>
+              <h3 class="chart-name">Taxa de Homicídios por 100 mil Mulheres (2014–2024)</h3>
+              <p class="chart-insight">
+                Comparativo decenal: a taxa de homicídios de mulheres negras mantém-se sistematicamente superior à de mulheres não negras em todos os anos analisados.
+              </p>
+            </div>
+            <div class="chart-view-area">
+              <canvas id="chart-serie-historica" aria-label="Série histórica de homicídios de mulheres negras versus não negras de 2014 a 2024" role="img"></canvas>
+            </div>
+            <div class="chart-panel-footer">
+              <span><strong>Fonte:</strong> Atlas da Violência 2026 — Ipea e Fórum Brasileiro de Segurança Pública.</span>
+            </div>
+          </div>
+
+          <!-- Gráfico 2: Barras — Comparação 2024 e Variações -->
+          <div class="chart-panel">
+            <div class="chart-panel-header">
+              <span class="chart-index-tag">GRÁFICO 02 · RECORTE COMPARATIVO</span>
+              <h3 class="chart-name">Taxa por 100 mil Mulheres em 2024</h3>
+              <p class="chart-insight">
+                Em 2024, a taxa de homicídios de mulheres negras (4,0) foi <strong>66,7% maior</strong> do que a taxa de mulheres não negras (2,4).
+              </p>
+            </div>
+
+            <!-- Destaques percentuais -->
+            <div class="pill-stats-row">
+              <div class="meta-pill pill-alert">
+                <span class="pill-val">+66,7%</span>
+                <span class="pill-lbl">maior entre negras</span>
+              </div>
+              <div class="meta-pill">
+                <span class="pill-val">-9,1%</span>
+                <span class="pill-lbl">variação 2023–2024</span>
+              </div>
+              <div class="meta-pill">
+                <span class="pill-val">-28,6%</span>
+                <span class="pill-lbl">variação 2014–2024</span>
+              </div>
+            </div>
+
+            <div class="chart-view-area">
+              <canvas id="chart-comparacao-2024" aria-label="Gráfico comparativo de taxas de homicídios em 2024" role="img"></canvas>
+            </div>
+            <div class="chart-panel-footer">
+              <span><strong>Fonte:</strong> Atlas da Violência 2026 — Ipea e FBSP.</span>
+            </div>
+          </div>
+
+          <!-- Gráfico 3: Área / Linha — Minas Gerais 2014-2024 -->
+          <div class="chart-panel">
+            <div class="chart-panel-header">
+              <span class="chart-index-tag">GRÁFICO 03 · DADOS REGIONAIS</span>
+              <h3 class="chart-name">Minas Gerais: Homicídios de Mulheres Negras</h3>
+              <p class="chart-insight">
+                Evolução da taxa por 100 mil mulheres negras no estado de Minas Gerais (2014–2024), registrando 2,8 no último levantamento.
+              </p>
+            </div>
+            <div class="chart-view-area">
+              <canvas id="chart-minas-gerais" aria-label="Taxa de homicídios de mulheres negras em Minas Gerais" role="img"></canvas>
+            </div>
+            <div class="chart-panel-footer">
+              <span><strong>Fonte:</strong> Atlas da Violência 2026 — Ipea e FBSP (Recorte MG).</span>
+            </div>
+          </div>
+
+          <!-- Gráfico 4: Barras Horizontais — Feminicídio 2024 -->
+          <div class="chart-panel">
+            <div class="chart-panel-header">
+              <span class="chart-index-tag">GRÁFICO 04 · FEMINICÍDIO 2024</span>
+              <h3 class="chart-name">Perfil das Vítimas e Dinâmica do Feminicídio</h3>
+              <p class="chart-insight">
+                63,6% das vítimas eram negras; 8 em cada 10 crimes foram cometidos por companheiros ou ex-companheiros.
+              </p>
+            </div>
+            <div class="chart-view-area chart-view-horizontal">
+              <canvas id="chart-feminicidio" aria-label="Indicadores percentuais de feminicídio em 2024" role="img"></canvas>
+            </div>
+            <div class="chart-panel-footer">
+              <span><strong>Fonte:</strong> Anuário Brasileiro de Segurança Pública 2025 — FBSP.</span>
+            </div>
+          </div>
+
+          <!-- Gráfico 5: Barras Horizontais — DataSenado -->
+          <div class="chart-panel">
+            <div class="chart-panel-header">
+              <span class="chart-index-tag">GRÁFICO 05 · PESQUISA DATASENADO</span>
+              <h3 class="chart-name">Violência Doméstica contra Mulheres Negras</h3>
+              <p class="chart-insight">
+                Amostra de 13.977 mulheres: dependência de renda e convivência com agressor ampliam a barreira para romper o ciclo da violência.
+              </p>
+            </div>
+            <div class="chart-view-area chart-view-horizontal">
+              <canvas id="chart-datasenado" aria-label="Resultados da pesquisa DataSenado sobre mulheres negras" role="img"></canvas>
+            </div>
+            <div class="chart-panel-footer">
+              <span><strong>Fonte:</strong> DataSenado (2024) — Violência doméstica contra mulheres negras.</span>
+            </div>
+          </div>
+
+          <!-- Gráfico 6: Barras Horizontais — Violência Sexual 2024 -->
+          <div class="chart-panel">
+            <div class="chart-panel-header">
+              <span class="chart-index-tag">GRÁFICO 06 · VIOLÊNCIA SEXUAL</span>
+              <h3 class="chart-name">Registros de Estupro e Estupro de Vulnerável</h3>
+              <p class="chart-insight">
+                Em 87.545 vítimas registradas em 2024, a maioria é do sexo feminino (87,7%), negra (55,6%) e agredida dentro da própria casa.
+              </p>
+            </div>
+            <div class="chart-view-area chart-view-horizontal">
+              <canvas id="chart-violencia-sexual" aria-label="Estatísticas de violência sexual no Brasil em 2024" role="img"></canvas>
+            </div>
+            <div class="chart-panel-footer">
+              <span><strong>Fonte:</strong> Anuário Brasileiro de Segurança Pública 2025 — FBSP.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Nota Técnica de Leitura Obrigatória (Conforme especificado) -->
+        <aside class="mandatory-reading-note" aria-label="Nota de leitura técnica dos dados">
+          <div class="note-icon-title">
+            <span class="note-symbol" aria-hidden="true">📋</span>
+            <strong class="note-caption">Nota de Leitura Obrigatória:</strong>
+          </div>
+          <p class="note-content">
+            "Mulheres negras" corresponde à soma de mulheres pretas e pardas nas estatísticas que utilizam a classificação racial do IBGE. Homicídio e feminicídio são indicadores diferentes; não comparar percentuais de bases distintas como se tivessem o mesmo denominador.
+          </p>
+        </aside>
+
+        <!-- Fontes Oficiais com Links Clicáveis -->
+        <div class="verified-sources-box">
+          <h3 class="verified-sources-title">Fontes e Metodologias Oficiais</h3>
+          <p class="verified-sources-sub">Todos os números apresentados no site são carregados da fonte única e imutável `dados.json`:</p>
+          
+          <ul class="sources-links-deck">
+            <li class="source-link-item">
+              <div class="source-desc-wrap">
+                <strong class="source-title">Atlas da Violência 2026</strong>
+                <span class="source-org">Instituto de Pesquisa Econômica Aplicada (Ipea) e Fórum Brasileiro de Segurança Pública (FBSP)</span>
+              </div>
+              <a href="https://www.ipea.gov.br/portal/" target="_blank" rel="noopener noreferrer" class="link-btn-clean" aria-label="Acessar portal do Ipea / Atlas da Violência (abre em nova aba)">
+                <span>Portal Ipea</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+
+            <li class="source-link-item">
+              <div class="source-desc-wrap">
+                <strong class="source-title">Anuário Brasileiro de Segurança Pública 2025</strong>
+                <span class="source-org">Fórum Brasileiro de Segurança Pública (FBSP)</span>
+              </div>
+              <a href="https://forumseguranca.org.br/" target="_blank" rel="noopener noreferrer" class="link-btn-clean" aria-label="Acessar portal do Fórum Brasileiro de Segurança Pública (abre em nova aba)">
+                <span>Portal FBSP</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+
+            <li class="source-link-item">
+              <div class="source-desc-wrap">
+                <strong class="source-title">Pesquisa DataSenado (2024)</strong>
+                <span class="source-org">Violência doméstica contra mulheres negras — Senado Federal</span>
+              </div>
+              <a href="https://www12.senado.leg.br/institucional/datasenado/publicacaodatasenado?id=pesquisa-datasenado-detalha-a-violencia-domestica-contra-mulheres-negras-desigualdades-e-desafios" target="_blank" rel="noopener noreferrer" class="link-btn-clean" aria-label="Acessar publicação da pesquisa DataSenado (abre em nova aba)">
+                <span>Pesquisa DataSenado</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Cuidados Pedagógicos e Canais de Proteção -->
+    <section class="page-section section-care" id="cuidados-ajuda">
+      <div class="container">
+        
+        <div class="section-label-group">
+          <span class="section-eyebrow">PROTEÇÃO INTEGRAL & ACOLHIMENTO</span>
+          <h2 class="section-heading">CUIDADOS E CANAIS DE AJUDA</h2>
+        </div>
+
+        <div class="care-principles-box">
+          <h3 class="principles-title">Orientações e Cuidados Pedagógicos</h3>
+          <p class="principles-body">
+            O projeto pedagógico <strong>não exige nem incentiva relatos pessoais de violência</strong> vivida por estudantes ou seus familiares. Todas as dinâmicas utilizam materiais pedagógicos públicos, situações fictícias e estatísticas oficiais, evitando qualquer exposição ou cena explícita. A escola assegura que eventuais revelações espontâneas serão acolhidas com total respeito, escuta qualificada e confidencialidade institucional, sem prometer sigilo absoluto quando houver necessidade legal de acionamento imediato da Rede de Proteção à Criança e ao Adolescente.
+          </p>
+        </div>
+
+        <!-- Canais de Apoio: Ligue 180 e 190 -->
+        <div class="help-dual-deck">
+          
+          <div class="help-action-card card-call-180">
+            <span class="help-chip">ATENDIMENTO GRATUITO · 24 HORAS</span>
+            <div class="help-dial-num">180</div>
+            <h3 class="help-org-name">Central de Atendimento à Mulher</h3>
+            <p class="help-org-desc">
+              Canal oficial do Governo Federal com escuta, orientação jurídica sobre a Lei Maria da Penha e direcionamento para os serviços municipais de proteção e acolhimento.
+            </p>
+            <div class="help-btn-deck">
+              <a href="tel:180" class="btn-dial btn-dial-orange">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Ligar para 180</span>
+              </a>
+              <a href="https://wa.me/556196100180" target="_blank" rel="noopener noreferrer" class="btn-dial btn-dial-whatsapp" aria-label="Atendimento Ligue 180 por WhatsApp (abre em nova aba)">
+                <span>WhatsApp Ligue 180</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="help-action-card card-call-190">
+            <span class="help-chip chip-emergency">EMERGÊNCIA POLICIAL IMEDIATA</span>
+            <div class="help-dial-num">190</div>
+            <h3 class="help-org-name">Polícia Militar de Minas Gerais</h3>
+            <p class="help-org-desc">
+              Em caso de flagrante delito, ameaça em andamento ou situação iminente de perigo físico contra meninas ou mulheres, ligue 190 para atendimento prioritário.
+            </p>
+            <div class="help-btn-deck">
+              <a href="tel:190" class="btn-dial btn-dial-red">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Ligar 190 (Emergência)</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. Contato, Referências Legais e Rodapé Institucional -->
+    <footer class="site-end-footer" id="contato">
+      <div class="container">
+        
+        <!-- Cabeçalho Institucional Oficial -->
+        <div class="institutional-masthead">
+          <span class="gov-badge">SUPERINTENDÊNCIA REGIONAL DE ENSINO DE CURVELO</span>
+          <h3 class="school-headline">Escola Estadual "Carlos Chagas"</h3>
+          <p class="school-address-bar">
+            Rua Dona Silvéria Moreira, 383, centro, Lassance/MG · CEP 39.250-000 · Tel. (38) 3759-1042 · <a href="mailto:escola.80802@educacao.mg.gov.br" class="footer-email">escola.80802@educacao.mg.gov.br</a>
+          </p>
+        </div>
+
+        <!-- Espaço Reservado para Logotipos Institucionais (conforme instrução) -->
+        <div class="reserved-logos-deck">
+          <div class="logo-slot">
+            <span class="logo-slot-icon">🏫</span>
+            <span class="logo-slot-text">E.E. Carlos Chagas</span>
+            <small class="logo-slot-note">[Espaço reservado: aguardando arquivo em assets/logos/]</small>
+          </div>
+          <div class="logo-slot">
+            <span class="logo-slot-icon">🏛️</span>
+            <span class="logo-slot-text">Prefeitura Municipal de Lassance</span>
+            <small class="logo-slot-note">[Espaço reservado: aguardando arquivo em assets/logos/]</small>
+          </div>
+          <div class="logo-slot">
+            <span class="logo-slot-icon">📚</span>
+            <span class="logo-slot-text">Secretaria Municipal de Educação</span>
+            <small class="logo-slot-note">[Espaço reservado: aguardando arquivo em assets/logos/]</small>
+          </div>
+        </div>
+
+        <div class="footer-columns-grid">
+          
+          <!-- Créditos dos Alunos e Professor -->
+          <div class="footer-col col-credits">
+            <h4 class="col-title">Créditos do Projeto</h4>
+            <blockquote class="official-credit-quote">
+              "Projeto desenvolvido pelos alunos do Ensino Médio em Tempo Integral da E.E. Carlos Chagas, Lassance/MG, sob orientação do professor Frederico Filipe."
+            </blockquote>
+            <p class="credit-subtext">
+              Iniciativa pedagógica que alinha pesquisa estatística, tecnologia digital, educação antirracista e promoção dos direitos humanos.
+            </p>
+          </div>
+
+          <!-- Referências Legais e Pedagógicas -->
+          <div class="footer-col col-legal">
+            <h4 class="col-title">Marcos Legais & Referências</h4>
+            <ul class="legal-refs-list">
+              <li><strong>Lei nº 10.639/2003:</strong> Ensino da História e Cultura Afro-Brasileira;</li>
+              <li><strong>Lei nº 11.340/2006:</strong> Lei Maria da Penha;</li>
+              <li><strong>Lei nº 14.164/2021:</strong> Prevenção da violência contra a mulher no currículo;</li>
+              <li><strong>CRMG:</strong> Currículo Referência de Minas Gerais;</li>
+              <li><strong>Portal Pedagógico:</strong> Secretaria de Estado de Educação de MG (SEE/MG);</li>
+              <li><strong>Protocolo Intersetorial:</strong> Ações Pedagógicas, Proteção Integral e Articulação da Rede de Garantia de Direitos (Lassance e Várzea da Palma).</li>
+            </ul>
+          </div>
+
+          <!-- Navegação Rápida -->
+          <div class="footer-col col-quicklinks">
+            <h4 class="col-title">Navegação Rápida</h4>
+            <ul class="footer-nav-menu">
+              <li><a href="#inicio">Início (Slider Vision)</a></li>
+              <li><a href="#projeto">O Projeto Pedagógico</a></li>
+              <li><a href="#disciplinas">12 Disciplinas e Atividades</a></li>
+              <li><a href="#acoes-culminancia">Feira e Ações Integradoras</a></li>
+              <li><a href="#cronograma">Cronograma Oficial</a></li>
+              <li><a href="#dados">Dados e Gráficos</a></li>
+              <li><a href="#cuidados-ajuda">Canais de Apoio (180/190)</a></li>
+            </ul>
+            <a href="#inicio" class="back-to-top-pill" aria-label="Voltar ao início da página">
+              <span>Voltar ao Início</span>
+              <span aria-hidden="true">↑</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom-statement">
+          <p>&copy; 2026 Escola Estadual "Carlos Chagas" · Lassance/MG · Projeto "Consciência Negra, Mulheres Negras e Cultura de Paz".</p>
+          <p>Desenvolvido para publicação estática e deploy na Vercel.</p>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Scripts: dados.js (dados oficiais), charts.js (gráficos Chart.js) e main.js (slider Vision e interatividade) -->
+  <script src="js/dados.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
